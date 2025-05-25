@@ -5,24 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Solución de Liquidez</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-100 font-sans text-gray-800">
+  <!-- Encabezado -->
   <header class="bg-[#0b1d33] text-white py-6">
     <div class="container mx-auto px-4 text-center">
-      <h1 class="text-3xl font-bold">Solución de Liquidez</h1>
+      <h1 class="text-3xl md:text-4xl font-bold">Solución de Liquidez</h1>
     </div>
   </header>
 
+  <!-- Introducción -->
   <main class="container mx-auto px-4 py-8 text-center">
-    <p class="mb-8 text-lg">Envía Bitcoin Lightning y el comerciante recibe MLC o CUP.</p>
-    <div class="space-y-4 max-w-md mx-auto">
-      <a href="https://btcpay.cubabitcoin.org/apps/2f5uVCnVsfmqv7t38xqGzorsftcE/pos"
-         class="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition text-lg font-semibold">Enviar CUP</a>
-      <a href="https://btcpay.cubabitcoin.org/apps/3SgtZSeibzTLLbazeEgVPacKkigU/pos"
-         class="block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition text-lg font-semibold">Enviar MLC</a>
-    </div>
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">Paga con Bitcoin, Recibe en MLC o CUP</h2>
+    <p class="mb-8 text-lg max-w-2xl mx-auto">
+      ¿Eres un Bitcoiner que quiere pagar con Bitcoin Lightning, pero el comerciante prefiere MLC o CUP? ¡Tenemos la solución! Con <strong>Solución de Liquidez</strong>, el cliente paga con Bitcoin de forma rápida y segura, y el comerciante recibe su dinero directamente en una transferencia bancaria en la moneda que elija, sin tocar criptomonedas.
+    </p>
+
+    <!-- Cómo Funciona -->
+    <section class="py-8">
+      <h3 class="text-xl md:text-2xl font-semibold mb-6">¿Cómo Funciona?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fa-solid fa-bolt text-3xl text-yellow-500 mb-4"></i>
+          <h4 class="text-lg font-semibold mb-2">1. El Bitcoiner Paga</h4>
+          <p>El cliente escanea un QR y paga con Bitcoin Lightning desde su billetera favorita.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fa-solid fa-exchange-alt text-3xl text-blue-600 mb-4"></i>
+          <h4 class="text-lg font-semibold mb-2">2. Conversión Instantánea</h4>
+          <p>El Bitcoin se convierte automáticamente a MLC o CUP en tiempo real.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fa-solid fa-money-bill text-3xl text-green-600 mb-4"></i>
+          <h4 class="text-lg font-semibold mb-2">3. El Comerciante Recibe</h4>
+          <p>El comerciante recibe el pago en su cuenta bancaria en MLC o CUP.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="py-8">
+      <h3 class="text-xl md:text-2xl font-semibold mb-6">Beneficios para Todos</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="images/bitcoin-payment.jpg" alt="Pago con Bitcoin Lightning" class="mb-4 rounded-lg mx-auto" style="max-width: 250px;">
+          <h4 class="text-lg font-semibold mb-2">Para el Bitcoiner</h4>
+          <p>Paga con Bitcoin Lightning de forma rápida, segura y sin complicaciones, usando cualquier billetera compatible.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="images/bank-transfer.jpg" alt="Transferencia bancaria" class="mb-4 rounded-lg mx-auto" style="max-width: 250px;">
+          <h4 class="text-lg font-semibold mb-2">Para el Comerciante</h4>
+          <p>Recibe MLC o CUP directamente en tu cuenta bancaria, sin necesidad de aprender sobre criptomonedas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Llamada a la Acción -->
+    <section class="py-8">
+      <h3 class="text-xl md:text-2xl font-semibold mb-6">¡Empieza a Aceptar Pagos Hoy!</h3>
+      <p class="mb-8 text-lg max-w-2xl mx-auto">Ofrece a tus clientes la libertad de pagar con Bitcoin y recibe tu dinero en la moneda que prefieres.</p>
+      <div class="space-y-4 max-w-md mx-auto">
+        <a href="https://btcpay.cubabitcoin.org/apps/2f5uVCnVsfmqv7t38xqGzorsftcE/pos"
+           class="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition text-lg font-semibold">Enviar CUP</a>
+        <a href="https://btcpay.cubabitcoin.org/apps/3SgtZSeibzTLLbazeEgVPacKkigU/pos"
+           class="block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition text-lg font-semibold">Enviar MLC</a>
+      </div>
+    </section>
   </main>
 
+  <!-- Pie de Página -->
   <footer class="bg-[#0b1d33] text-white py-4">
     <div class="container mx-auto px-4 text-center">
       <p class="text-sm">© 2025 Solución de Liquidez</p>
