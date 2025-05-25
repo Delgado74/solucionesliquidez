@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solución de Liquidez</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0b1d33">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+  <header class="bg-[#0b1d33] text-white py-6">
+    <div class="container mx-auto px-4 flex justify-center">
+      <img src="./img/icon.png" alt="Logo Solución de Liquidez" class="h-20">
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-6 text-center">
+    <h1 class="text-2xl md:text-3xl font-bold mb-4">Solución de Liquidez</h1>
+    <p class="mb-6 text-base md:text-lg">Envía Bitcoin Lightning y el comerciante recibe MLC o CUP.</p>
+
+    <div class="space-y-4">
+      <form method="POST" action="https://btcpay.cubabitcoin.org/apps/2f5uVCnVsfmqv7t38xqGzorsftcE/pos">
+        <input type="hidden" name="email" value="customer@example.com" />
+        <input type="hidden" name="orderId" value="CustomOrderId" />
+        <input type="hidden" name="notificationUrl" value="https://example.com/callbacks" />
+        <input type="hidden" name="redirectUrl" value="https://example.com/thanksyou" />
+        <button type="submit" name="choiceKey" value="green-tea"
+          class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition text-lg">Enviar CUP</button>
+      </form>
+
+      <form method="POST" action="https://btcpay.cubabitcoin.org/apps/3SgtZSeibzTLLbazeEgVPacKkigU/pos">
+        <input type="hidden" name="email" value="customer@example.com" />
+        <input type="hidden" name="orderId" value="CustomOrderId" />
+        <input type="hidden" name="notificationUrl" value="https://example.com/callbacks" />
+        <input type="hidden" name="redirectUrl" value="https://example.com/thanksyou" />
+        <button type="submit" name="choiceKey" value="green-tea"
+          class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition text-lg">Enviar MLC</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-[#0b1d33] text-white py-4 mt-6">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-sm">© 2025 Solución de Liquidez</p>
+    </div>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log("Service Worker registrado con éxito."))
+        .catch(error => console.log("Error al registrar el Service Worker:", error));
+    }
+  </script>
+</body>
+</html>
