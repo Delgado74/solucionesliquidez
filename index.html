@@ -4,41 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Solución de Liquidez</title>
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#0b1d33">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans text-gray-800">
   <header class="bg-[#0b1d33] text-white py-6">
-    <div class="container mx-auto px-4 flex justify-center">
-      <img src="./img/icon.png" alt="Logo Solución de Liquidez" class="h-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl font-bold">Solución de Liquidez</h1>
     </div>
   </header>
 
-  <main class="container mx-auto px-4 py-6 text-center">
-    <h1 class="text-2xl md:text-3xl font-bold mb-4">Solución de Liquidez</h1>
-    <p class="mb-6 text-base md:text-lg">Envía Bitcoin Lightning y el comerciante recibe MLC o CUP.</p>
-
-    <div class="space-y-4">
+  <main class="container mx-auto px-4 py-8 text-center">
+    <p class="mb-8 text-lg">Envía Bitcoin Lightning y el comerciante recibe MLC o CUP.</p>
+    <div class="space-y-4 max-w-md mx-auto">
       <a href="https://btcpay.cubabitcoin.org/apps/2f5uVCnVsfmqv7t38xqGzorsftcE/pos"
-         class="block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition text-lg">Enviar CUP</a>
+         class="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition text-lg font-semibold">Enviar CUP</a>
       <a href="https://btcpay.cubabitcoin.org/apps/3SgtZSeibzTLLbazeEgVPacKkigU/pos"
-         class="block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition text-lg">Enviar MLC</a>
+         class="block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition text-lg font-semibold">Enviar MLC</a>
     </div>
   </main>
 
-  <footer class="bg-[#0b1d33] text-white py-4 mt-6">
+  <footer class="bg-[#0b1d33] text-white py-4">
     <div class="container mx-auto px-4 text-center">
       <p class="text-sm">© 2025 Solución de Liquidez</p>
     </div>
   </footer>
-
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then(() => console.log("Service Worker registrado con éxito."))
-        .catch(error => console.log("Error al registrar el Service Worker:", error));
-    }
-  </script>
 </body>
 </html>
