@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,23 +20,10 @@
     <p class="mb-6 text-base md:text-lg">Envía Bitcoin Lightning y el comerciante recibe MLC o CUP.</p>
 
     <div class="space-y-4">
-      <form method="POST" action="https://btcpay.cubabitcoin.org/apps/2f5uVCnVsfmqv7t38xqGzorsftcE/pos">
-        <input type="hidden" name="email" value="customer@example.com" />
-        <input type="hidden" name="orderId" value="CustomOrderId" />
-        <input type="hidden" name="notificationUrl" value="https://example.com/callbacks" />
-        <input type="hidden" name="redirectUrl" value="https://example.com/thanksyou" />
-        <button type="submit" name="choiceKey" value="green-tea"
-          class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition text-lg">Enviar CUP</button>
-      </form>
-
-      <form method="POST" action="https://btcpay.cubabitcoin.org/apps/3SgtZSeibzTLLbazeEgVPacKkigU/pos">
-        <input type="hidden" name="email" value="customer@example.com" />
-        <input type="hidden" name="orderId" value="CustomOrderId" />
-        <input type="hidden" name="notificationUrl" value="https://example.com/callbacks" />
-        <input type="hidden" name="redirectUrl" value="https://example.com/thanksyou" />
-        <button type="submit" name="choiceKey" value="green-tea"
-          class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition text-lg">Enviar MLC</button>
-      </form>
+      <a href="https://btcpay.cubabitcoin.org/apps/2f5uVCnVsfmqv7t38xqGzorsftcE/pos"
+         class="block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition text-lg">Enviar CUP</a>
+      <a href="https://btcpay.cubabitcoin.org/apps/3SgtZSeibzTLLbazeEgVPacKkigU/pos"
+         class="block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition text-lg">Enviar MLC</a>
     </div>
   </main>
 
