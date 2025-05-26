@@ -1,4 +1,5 @@
-Solución de Liquidez
+##Solución de Liquidez##
+
 Descripción del Proyecto
 Solución de Liquidez es una iniciativa diseñada para permitir que comerciantes que no desean aceptar Bitcoin directamente puedan recibir pagos en su moneda preferida (CUP o MLC) cuando un cliente paga con Bitcoin a través de la red Lightning. El cliente paga utilizando Bitcoin Lightning, y el comerciante recibe el equivalente en su tarjeta magnética (CUP o MLC) según su elección, con un proceso gestionado por el equipo de Solución de Liquidez.
 El proyecto busca facilitar la integración de Bitcoin en comercios locales, respetando las preferencias de pago del comerciante y asegurando transacciones rápidas y seguras.
