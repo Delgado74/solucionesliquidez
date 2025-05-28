@@ -103,20 +103,6 @@ El cliente escanea el QR y paga el equivalente en Bitcoin desde su billetera Lig
 El equipo de Solución de Liquidez recibe la notificación del pago y procesa el depósito de 1000 CUP en la tarjeta del comerciante.
 
 El comerciante recibe un SMS confirmando el depósito.
-
----
-
-## Contribuciones
-
-¡Estamos abiertos a contribuciones! Si deseas colaborar en el desarrollo, mejora o documentación del proyecto, por favor sigue estos pasos:
-
-1. Clona el repositorio (enlace disponible próximamente).
-2. Crea una rama para tus cambios:  
-   `git checkout -b mi-nueva-funcionalidad`
-3. Realiza tus cambios y haz commit:  
-   `git commit -m "Descripción de los cambios"`
-4. Envía un pull request para revisión.
-
 ---
 
 ## Licencia
